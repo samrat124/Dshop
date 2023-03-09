@@ -10,9 +10,9 @@ const Category = () => {
        })
      },[])
   return (
-    <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:'5%',padding:'5%'}}>{
+    <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:'5%',padding:'5%',marginTop:'20px'}}>{
         category.map((ele,index)=>{
-            return <CatgCard {...ele}/>
+            return <  CatgCard {...ele}/>
         })
         }</div>
   )
