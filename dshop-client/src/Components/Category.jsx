@@ -1,9 +1,11 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios'
-import CatgCard from './CatgCard';
+import CatgCard from './CatgCard'; 
+
 
 const Category = () => {
     const [category,setCategory]=useState([]);
+    
      useEffect(()=>{
        axios.get('https://api.escuelajs.co/api/v1/categories').then((res)=>{
         setCategory(res.data);

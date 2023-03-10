@@ -6,7 +6,7 @@ const CatgCard = (props) => {
     let{image,name}=props
   return (
    <Link to={`/product/${name}`}> <div >
-        <img style={{width:'100%'}} src={image} alt={name} />
+        <img style={{width:'100%',height:'300px'}} src={image} alt={name} />
         <h3 style={{}}>{name}</h3>
     </div>
     </Link>
