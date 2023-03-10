@@ -1,5 +1,6 @@
 let initial={
-    catgData:[]
+    catgData:[],
+    loginData:false
 }
 
 export const reducer=(data=initial,action)=>{
@@ -8,6 +9,10 @@ export const reducer=(data=initial,action)=>{
         return{
             catgData:[...data.catgData,action.payload]
         }
+        case "login":
+            return{
+                loginData:action.payload
+            }
         default:{
             return data
         }
