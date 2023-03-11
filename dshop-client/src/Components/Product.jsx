@@ -43,16 +43,7 @@ const Product = () => {
         setPrice(product.sort(function(a,b){return b.price-a.price}))
       }
     }
-    let showData=()=>{
-      if(filter){
-        // price.map((ele,index)=>{
-        //   return  <ProductCard {...ele}/>
-        // })
-      }
-      else{
-   
-    }
-    }
+     
 
   return (
     <div>
