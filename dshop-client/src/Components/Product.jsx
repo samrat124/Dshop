@@ -13,7 +13,7 @@ const Product = () => {
     let {name}=useParams();
     console.log(name);
     useEffect(()=>{
-      axios.get('https://api.escuelajs.co/api/v1/products').then((res)=>{
+      axios.get('https://fakestoreapi.com/products').then((res)=>{
         setProduct(res.data)
         if(filter){
           if(ftData=='esc'){
@@ -33,7 +33,7 @@ const Product = () => {
         setProduct(res.data);console.log(res.data)
 
     })
-    },[product])
+    },[])
     let handleFilter=(e)=>{
       setFtData(e.target.value);
       setFilter(true);
@@ -52,7 +52,7 @@ const Product = () => {
         <option value="asc">Low to High</option>
         <option value="desc">High to Low</option>
       </select>
-    <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:'5%',padding:'5%',marginTop:'20px'}}>
+    <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:'5%',marginTop:'20px'}}>
       
       {
         product.map((ele,index)=>{
