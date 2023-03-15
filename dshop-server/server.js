@@ -2,7 +2,7 @@
  const dotenv=require('dotenv');
 
 
- dotenv.config({path:'dshop-server/config/config.env'})
+ dotenv.config({path:'./config/config.env'}) 
 
 
 
